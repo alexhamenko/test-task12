@@ -1,0 +1,57 @@
+
+.select {
+  max-width: 200px;
+  width: 162px;
+  position: relative;
+  text-align-last: left;
+  &__current {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 6px 7px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 5px 3px rgba(#ccc, .2);
+    background-color: #fff;
+    &::after {
+      content: '';
+      position: absolute;
+      background: url("../images/icons/chevron_up.png") no-repeat center;
+      background-size: contain;
+      right: 10px;
+      top: 50%;
+      transform: translateY(- 50%) rotate(180deg);
+      width: 10px;
+      height: 8px;
+    }
+  }
+  &__list {
+    width: 100%;
+    position: absolute;
+    z-index: 2 ;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(199, 203, 210, 0.6);
+    border-radius: 5px;
+    margin-top: 5px;
+    display: none;
+    &--show {
+      display: block;
+    }
+  }
+  &__item {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    display: inline-block;
+    width: 100%;
+    &:hover {
+      background-color: $white-ghost;
+    }
+  }
+  &:hover, &:focus {
+    //background-color: darken(#fff, 10)
+  }
+}
+

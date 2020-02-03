@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $background-main;
+  font-family: Roboto, sans-serif;
+  color: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.error-text {
+  color: $font-error;
+}
+.success-text {
+  color: $font-success;
+}
+a {
+  color: $accent-main;
+}

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bundle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="main-section table_submitted-sitemaps">
+            <div class="table-header">
+                <div class="table-title_block">
+                    <h3 class="table-title">Submitted sitemaps</h3>
+                    <div class="info-icon tooltip-item">
+                        <span class="tooltip-text tooltip-text--right">Some info about table</span>
+                    </div>
+                </div>
+                <div class="table-header_buttons-block">
+                    <div class="selected-block buttons-block_item">
+                        <span class="selected-block_title">Selected sitemaps</span>
+                        <span class="selected-block_count">1</span>
+                    </div>
+                    <div class="recrawl-btn buttons-block_item" id="recrawl-btn">Recrawl sitemap</div>
+                    <div class="remove-btn_text buttons-block_item" id="remove-btn_text">Remove sitemap</div>
+                </div>
+            </div>
+            <div class="table-filters">
+                <p class="table-filters_title">Filters:</p>
+                <div class="filters-block">
+                    <div class="url-filter select">
+                        <input class="select__input" type="hidden" name="number" value="Five">
+                        <button class="select__current">URL</button>
+                        <div class="select__list">
+                            <button class="select__item" data-value="One">One</button>
+                            <button class="select__item" data-value="Two">Two</button>
+                            <button class="select__item" data-value="Three">Three</button>
+                            <button class="select__item" data-value="Four">Four</button>
+                            <button class="select__item" data-value="Five">Five</button>
+                        </div>
+                    </div>
+                    <div class="type-filter select">
+                        <input class="select__input" type="hidden" name="number" value="Five">
+                        <button class="select__current">All types</button>
+                        <div class="select__list">
+                            <button class="select__item" data-value="One">One</button>
+                            <button class="select__item" data-value="Two">Two</button>
+                            <button class="select__item" data-value="Three">Three</button>
+                            <button class="select__item" data-value="Four">Four</button>
+                            <button class="select__item" data-value="Five">Five</button>
+                        </div>
+                    </div>
+                    <div class="submit-filte select">
+                        <input class="select__input" type="hidden" name="number" value="Five">
+                        <button class="select__current">Submitted</button>
+                        <div class="select__list">
+                            <button class="select__item" data-value="One">One</button>
+                            <button class="select__item" data-value="Two">Two</button>
+                            <button class="select__item" data-value="Three">Three</button>
+                            <button class="select__item" data-value="Four">Four</button>
+                            <button class="select__item" data-value="Five">Five</button>
+                        </div>
+                    </div>
+                    <div class="daterange-filter select">
+                        <input class="select__input" type="hidden" name="number" value="Five">
+                        <button class="select__current">Data range</button>
+                        <div class="select__list">
+                            <button class="select__item" data-value="One">One</button>
+                            <button class="select__item" data-value="Two">Two</button>
+                            <button class="select__item" data-value="Three">Three</button>
+                            <button class="select__item" data-value="Four">Four</button>
+                            <button class="select__item" data-value="Five">Five</button>
+                        </div>
+                    </div>
+                    <div class="success-filter select">
+                        <button class="select__current">All sitemaps</button>
+                        <div class="select__list">
+                            <button class="select__item" data-value="Success">Success</button>
+                            <button class="select__item" data-value="Couldn't fetch">Couldn't fetch</button>
+                            <button class="select__item" data-value="Errors">Errors</button>
+                        </div></div>
+                </div>
+            </div>
+            <div class="table-results">
+                <div class="table-row table-results_header">
+                    <div class="table-cell select-all_checkbox">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="styled-checkbox-1">
+                            <label class="checkmark" for="styled-checkbox-1"></label>
+                        </div>
+                    </div>
+                    <div class="table-cell col-name result-url">Sitemap</div>
+                    <div class="table-cell col-name result-type">Type</div>
+                    <div class="table-cell col-name submitted-date">Submitted</div>
+                    <div class="table-cell col-name last-check">Last check</div>
+                    <div class="table-cell col-name result-status">Status</div>
+                    <div class="table-cell col-name url-count">URLs</div>
+                    <div class="table-cell col-name recrawl-buttons">Recrawl sitemap</div>
+                    <div class="table-cell col-name remove-cell">Remove sitemap</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script src="js/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+.main-section {
+  background: #FFFFFF;
+  border: 1px solid #C2CFE0;
+  border-radius: 5px;
+  /* Table header block*/
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 30px 22px 24px;
+    .table-title_block {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .table-title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: $font-main;
+        margin-right: 9px;
+      }
+
+      .info-icon {
+        background: url("../images/icons/info_circle.png") no-repeat center;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .table-header_buttons-block {
+      display: flex;
+      justify-content: flex-end;
+      &.active {
+        .selected-block {
+          display: block;
+        }
+        .recrawl-btn {
+          color: $accent-main;
+        }
+        .remove-btn_text {
+          color: $font-error;
+        }
+      }
+      .buttons-block_item {
+        padding: 0 13px;
+        &:last-child {
+          padding: 0 0 0 13px;
+        }
+      }
+      .selected-block {
+        display: none;
+        &.active {
+          display: block;
+        }
+        .selected-block_title {
+
+        }
+        .selected-block_count {
+
+        }
+      }
+      .recrawl-btn {
+        color: $font-disabled;
+      }
+      .remove-btn_text {
+        color: $font-disabled;
+      }
+    }
+  }
+
+  /* Table filters block */
+  .table-filters {
+    background-color: $background-shadow;
+    padding: 13px 31px 11px 21px;
+    border-top: 1px solid $font-disabled;
+    border-bottom: 1px solid $font-disabled;
+    .table-filters_title {
+      font-weight: 500;
+      color: $font-main;
+    }
+
+    .filters-block {
+      display: flex;
+      justify-content: space-between;
+      .url-filter {
+
+      }
+
+      .type-filter {
+
+      }
+
+      .submit-filter {
+
+      }
+
+      .daterange-filter {
+
+      }
+
+      .success-filter {
+
+      }
+    }
+  }
+
+  /* Table main */
+  .table-results {
+    /* General styles */
+    .table-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 21px 14px 14px 26px;
+      &:not(:first-child) {
+        border-bottom: 1px solid $white-solitude;
+      }
+      &.active {
+        background-color: $accent-additional;
+      }
+      .table-cell {
+        text-align: center;
+      }
+    }
+    /* Table header */
+    .table-results_header {
+      background-color: $white-ghost;
+      padding: 9px 13px 9px 25px;
+      .col-name {
+        font-weight: 700;
+        color: $font-main;
+      }
+    }
+    /* Individual styles*/
+    .table-row {
+      .table-cell {
+        &.select-one_checkbox {
+          flex: 1 0 auto;
+          max-width: 20px;
+        }
+        &.result-url {
+          flex: 1 0 14%;
+          color: $accent-main;
+          text-decoration: none;
+        }
+        &.result-type {
+          flex: 1 0 6%;
+          margin: 0 5px;
+        }
+        &.submitted-date {
+          flex: 1 0 6%;
+          margin: 0 5px;
+        }
+        &.last-check {
+          flex: 1 0 6%;
+          margin: 0 5px;
+        }
+        &.result-status {
+          flex: 1 0 15%;
+          margin: 0 5px;
+        }
+        &.url-count {
+          flex: 1 0 15%;
+          margin: 0 5px;
+        }
+        &.recrawl-buttons{
+          flex: 1 0 9%;
+          .recrawl-button {
+            border: 1px solid $accent-main;
+            box-sizing: border-box;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            color: $accent-main;
+            padding: 5px 12px;
+            &:hover {
+              background-color: $blue-light;
+              cursor: pointer;
+            }
+          }
+        }
+        &.remove-cell {
+          flex: 1 0 5%;
+          .trash-icon {
+            background: url("../images/icons/trash.png") no-repeat center;
+            background-size: contain;
+            width: 14px;
+            height: 20px;
+            margin: 0 auto;
+            &:hover {
+              background: url("../images/icons/trash-active.png") no-repeat center;
+              background-size: contain;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
